@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: black;
+  background: linear-gradient(135deg, lightblue, skyblue);
+}
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 620px;
+  padding: 32px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px lightsteelblue;
+}
+
+h1 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 28px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border-radius: 8px;
+}
+
+input,
+select {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid silver;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  background: royalblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.nova-tarefa,
+.tarefa-acoes {
+  display: flex;
+  gap: 8px;
+}
+
+.filtros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.lista-tarefas {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-tarefas li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background: whitesmoke;
+}
+
+.tarefa-texto {
+  margin: 0 0 6px;
+}
+
+.tarefa-status {
+  margin: 0;
+  font-size: 13px;
+}
+
+.concluida .tarefa-texto {
+  text-decoration: line-through;
+}
+
+.botao-apagar {
+  background: mistyrose;
+  color: firebrick;
+}
+
+.mensagem-vazia {
+  text-align: center;
+}
